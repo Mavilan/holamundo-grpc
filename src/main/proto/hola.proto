@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package mavilan.misprotos.hola;
+
+option java_multiple_files = true;
+option java_outer_classname = "HolaProtoClass";
+option java_package = "com.mavilan.grpc.hola";
+
+message Hola {
+    string nombre = 1;
+}
+
+message HolaResques {
+    Hola hola = 1;
+}
+
+message HolaResponse {
+    Hola hola = 1;
+}
+
+service GenerarSaludo {
+    rpc saluda(HolaResques) returns (HolaResponse);
+}
