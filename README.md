@@ -42,6 +42,15 @@ dependencia para levantar al servicio:
     <version>1.49.0</version>
 </dependency>
 ```
+dependencia para poder realizar test unitarios:
+```
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.13.1</version>
+    <scope>test</scope>
+</dependency>
+```
 
 ### Plugins
 
@@ -98,3 +107,9 @@ Se requiere compilar el proyecto con ``mvn compile``para generar las clases del 
 Despues inicar el proceso del server, este quedara esperando las llmadas del cliente.
 
 Despues iniciar el proceso del cliente y ejecutara una llamada al servicio.
+
+___
+
+## Pruebas unitarias
+
+Solo se estara probando la implementacion del servidor como normlamente se prueban en los proyectos java.
