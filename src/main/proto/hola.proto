@@ -10,7 +10,7 @@ message Hola {
     string nombre = 1;
 }
 
-message HolaResques {
+message HolaRequest {
     Hola hola = 1;
 }
 
@@ -19,5 +19,5 @@ message HolaResponse {
 }
 
 service GenerarSaludo {
-    rpc saluda(HolaResques) returns (HolaResponse);
+    rpc saluda(HolaRequest) returns (HolaResponse);
 }
