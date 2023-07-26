@@ -2,7 +2,7 @@ package com.mavilan.grpc.hola.service;
 
 import com.mavilan.grpc.hola.GenerarSaludoGrpc;
 import com.mavilan.grpc.hola.Hola;
-import com.mavilan.grpc.hola.HolaResques;
+import com.mavilan.grpc.hola.HolaRequest;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.Server;
@@ -35,7 +35,7 @@ public class HolaImplTest {
     }
     @Test
     public void executeService(){
-        Assert.assertEquals("Hola marco", blockingStub.saluda(HolaResques.newBuilder()
+        Assert.assertEquals("Hola marco", blockingStub.saluda(HolaRequest.newBuilder()
                 .setHola(Hola.newBuilder().setNombre("marco").build())
                 .build())
                 .getHola()
@@ -45,7 +45,7 @@ public class HolaImplTest {
     @Test
     public void executeServiceEmpty(){
         try {
-            blockingStub.saluda(HolaResques.newBuilder().setHola(Hola.getDefaultInstance()).build());
+            blockingStub.saluda(HolaRequest.newBuilder().setHola(Hola.getDefaultInstance()).build());
         } catch (StatusRuntimeException sre){
             Assert.assertEquals("nombre no debe ser vacio", sre.getStatus().getDescription());
             Assert.assertEquals("INVALID_ARGUMENT", sre.getStatus().getCode().name());

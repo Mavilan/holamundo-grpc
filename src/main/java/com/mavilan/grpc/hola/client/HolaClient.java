@@ -2,8 +2,8 @@ package com.mavilan.grpc.hola.client;
 
 import com.mavilan.grpc.hola.GenerarSaludoGrpc;
 import com.mavilan.grpc.hola.Hola;
+import com.mavilan.grpc.hola.HolaRequest;
 import com.mavilan.grpc.hola.HolaResponse;
-import com.mavilan.grpc.hola.HolaResques;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 
@@ -22,7 +22,7 @@ public class HolaClient {
 
         GenerarSaludoGrpc.GenerarSaludoBlockingStub blockingStub = GenerarSaludoGrpc.newBlockingStub(managedChannel);
         HolaResponse holaResponse = blockingStub.saluda(
-                HolaResques.newBuilder()
+                HolaRequest.newBuilder()
                         .setHola(
                                 Hola.newBuilder()
                                         .setNombre("Marco")
