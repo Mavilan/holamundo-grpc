@@ -8,7 +8,7 @@ En este repositorio se encuentra un ejemplo de un servicio simple que implementa
 ### Dependencias
 Se requiere agregar las siguientes dependencias al proyecto:
 
-dependencia para reconocer clases de un **message** creadas por el compilador
+- dependencia para reconocer clases de un **message** creadas por el compilador
 ```
 <dependency>
     <groupId>com.google.protobuf</groupId>
@@ -16,7 +16,7 @@ dependencia para reconocer clases de un **message** creadas por el compilador
     <version>3.21.5</version>
 </dependency>
 ````
-dependencia para reconocer clases de un **service** grpc creadas por el compilador:
+- dependencia para reconocer clases de un **service** grpc creadas por el compilador:
 ```
 <dependency>
     <groupId>io.grpc</groupId>
@@ -34,7 +34,7 @@ dependencia para reconocer clases de un **service** grpc creadas por el compilad
     <version>1.2</version>
 </dependency>
 ```
-dependencia para levantar al servicio:
+- dependencia para levantar al servicio:
 ```       
 <dependency>
     <groupId>io.grpc</groupId>
@@ -42,7 +42,7 @@ dependencia para levantar al servicio:
     <version>1.49.0</version>
 </dependency>
 ```
-dependencia para poder realizar test unitarios:
+- dependencia para poder realizar test unitarios:
 ```
 <dependency>
     <groupId>junit</groupId>
