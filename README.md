@@ -105,11 +105,11 @@ Y finalmente agregar la siguiente extencion para reconocer variables de ambiente
 ---
 ## Indicaciones de uso
 
-Se requiere compilar el proyecto con ``mvn compile``para generar las clases del archivo proto y que no existan errores.
+Se requiere compilar el proyecto con ``mvn compile`` para generar las clases del archivo proto y que no existan errores.
 
-Despues inicar el proceso del server, este quedara esperando las llmadas del cliente.
+Despues inicar el proceso del server, este quedara esperando las llamadas del cliente.
 
-Despues iniciar el proceso del cliente y ejecutara una llamada al servicio.
+Despues iniciar el proceso del cliente y ejecutar una llamada al servicio.
 
 ___
 
