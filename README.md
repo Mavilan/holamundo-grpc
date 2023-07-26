@@ -54,7 +54,9 @@ Se requiere agregar las siguientes dependencias al proyecto:
 
 ### Plugins
 
-Plugin para compilacion con maven
+Se requieren los siguientes plugins para el buen funcionamiento del proyecto:
+
+- plugin para compilacion con maven
 ```
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
@@ -66,7 +68,7 @@ Plugin para compilacion con maven
     </configuration>
 </plugin>
 ```
-Plugin para compilar el archivo proto, tanto para los objetos **message** como para los **services**:
+- plugin para compilar el archivo proto, tanto para los objetos **message** como para los **services**:
 ```   
 <plugin>
     <groupId>org.xolstice.maven.plugins</groupId>
@@ -89,6 +91,7 @@ Plugin para compilar el archivo proto, tanto para los objetos **message** como p
     </executions>
 </plugin>
 ```
+### Extenciones
 
 Y finalmente agregar la siguiente extencion para reconocer variables de ambiente:
 ```
