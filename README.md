@@ -56,7 +56,7 @@ Se requiere agregar las siguientes dependencias al proyecto:
 
 Se requieren los siguientes plugins para el buen funcionamiento del proyecto:
 
-- plugin para compilacion con maven
+- plugin para compilacion con maven:
 ```
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
